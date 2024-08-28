@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Raleway";
+    color: whitesmoke;
+}
+body{
+    height: 100vh;
+    background-image: linear-gradient(to right, #feac5e 0%, #c779d0 50%, #4bc0c8 100%);
+}
+html{
+    font-size: 16px;
+}
+.wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 1em;
+}
+#turn span{
+    margin: auto;
+    padding: 10px;
+
+}
+.container{
+    width: 70vmin;
+    height: 70vmin;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vmin;
+}
+.btn-move{
+    background-color: #ffffff;
+    height: 22vmin;
+    width: 22vmin;
+    border: none;
+    border-radius: 8px;
+    font-size: 12vmin;
+    color: #c57fe0;
+    box-shadow: 0 0 10px rgb(115, 114, 114);
+    font-weight: 500;
+}
+#btn-restart {
+    font-size: 1.3em;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 17px;
+}
+#btn-restart b{
+    color: #c57fe0;
+}
+.popup{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    background-image: linear-gradient(to right, #feac5e 0%, #c779d0 50%, #4bc0c8 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1em;
+    font-size: 10vmin;
+    font-weight: 500;
+
+ }
+ #btn-new-game{
+    font-size: 22px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+
+ }
+
+ #btn-new-game b{
+    color: #ab57cc;
+    text-align: center;
+ }
+ .popup.hide{
+    display: none;
+ }
+  /* making custom class */
+ .glow{
+    background-color: rgba(255, 255, 255, 0.833);
+    transition: background 0.5s;
+    border: none;
+    color: #ab57cc;
+    border-radius: 100px;
+    padding: 1px 5px;
+    font-weight: 500;
+ }
